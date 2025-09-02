@@ -5,16 +5,19 @@
 \usepackage[ngerman]{babel} % Neue deutsche Rechtschreibung
 \usepackage[T1]{fontenc}      % Font encoding
 \usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage[flushmargin]{footmisc} % Fußnoten ohne Einrückung
+
 
 \usepackage{lipsum}           % Example text (for testing)
 
 % ----- Document -----
 \begin{document}
 	
-	\title{Vollständige Induktion
-			ein Beweisverfahren
+	\title{Vollständige Induktion, \\ ein Beweisverfahren
 	}   % Title
-	\author{Tom Roth}               % Author
+	\author{Tom Roth}              					 % Author
 	\date{2. September 2025}                    % Date (or leave empty)
 	
 	 \maketitle                      % Creates title page
@@ -27,11 +30,17 @@
 	\pagenumbering{arabic} % Seitenzahlen beginnen bei 1
 	\setcounter{page}{1}  % optional, um sicherzustellen, dass es 1 ist
 	
+	\section{Mathematisches Beweisen}
+	
+	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
+	
 	\section{Einleitung}            % First section
+	In der Mathematik gibt es verschiedene Beweistechniken. 
+	\section{Verwendungszweck}
 	
-	\section{Zweck}
+	\section{Begriffe}
 	
-	\section{Verfahren}
+	\section{Aufbau des Beweises}
 
 	\section{Beispiel}
 	
@@ -73,6 +82,8 @@
 	Da IA und IS gezeigt wurden, gilt die Aussage für alle \\ natürlichen Zahlen $n \ge 1$.
 	
 	\section{Fazit}
+	
+	\section{Quellen}
 
 	
 \end{document}

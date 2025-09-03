@@ -10,6 +10,10 @@
 \usepackage[flushmargin]{footmisc} % Fußnoten ohne Einrückung
 \usepackage{verbatim} %Kommentare
 
+% \usepackage[backend=biber,style=alphabetic]{biblatex}
+% \addbibresource{literatur.bib} % Name deiner .bib-Datei
+
+
 
 \usepackage{lipsum}           % Example text (for testing)
 
@@ -32,18 +36,67 @@
 	\setcounter{page}{1}  % optional, um sicherzustellen, dass es 1 ist
 	
 	\section{Mathematisches Beweisen}
-	\subsection*{Beweise allgemein}
 	Ein Beweis in der Mathematik ist eine logisch fehlerfreie Herleitung einer Aussage aus zuvor als wahr angesehener Aussagen. Diese zuvor als wahr angesehen Aussagen werden als \emph{Axiome} bezeichnet.
-	Aussagen in der Mathemaik sind Sätze, die als wahr oder falsch angesehen werden können. Der Satz \glqq Für alle ungeraden natürlichen Zahlen $m$ und $n$ ist die Summe $m + n$ eine gerade Zahl\grqq \ wäre ein gutes Beispiel für eine mathematische Aussage.
+	Aussagen in der Mathemaik sind Sätze, die als wahr oder falsch angesehen werden können. Der Satz \glqq Für alle ungeraden natürlichen Zahlen $m$ und $n$ ist die Summe $m + n$ eine gerade Zahl\grqq \ wäre ein gutes Beispiel für eine mathematische Aussage. Dabei werden zwei Aussagen mit einer Aussageverknüpfung, hier \glqq und\grqq , \ zu einer Konjunktion verknüpft, die ihren eigenen Wahrheitswert besitzt.
+	Meist sollen Aussagen der Form $\forall x(P(x) \Rightarrow Q(x))$, also wenn . Hierbei sind die beiden Aussagen $P$ und $Q$ mit einer \glqq wenn, dann\grqq -Verknüpfung miteinander verknüpft. 
+	Diese Art von Konjunktionen nennt man \emph{Implikationen.}
+	Es soll also bewiesen werden, dass wenn $P$ gilt, $Q$ auch gilt. \\	
+	Die dazugehörige Wahrheitstabelle sieht wie folgt aus:
+	\[
+	\begin{array}{|c|c|c|}
+		\hline
+		P & Q & P \Rightarrow Q \\
+		\hline
+		W & W & W \\
+		W & F & F \\
+		F & W & W \\
+		F & F & W \\
+		\hline
+	\end{array}
+	\]
+	Wie zu sehen ist, ist diese Aussage nur falsch, wenn $P$ wahr ist, und $Q$ falsch.
+	Diese Aussage kann allerdings auch umgeformt werden. \\
+	Das Kommutativ gesetz darf nicht angewendet werde. $P \Rightarrow Q \not\equiv Q \Rightarrow P$. \\
+	Die Wahrheitswerte können allerdings mithilfe des \glqq nicht\grqq -Operators negiert werde. Da die Konjunktion nur flasch ist, wenn $P$ wahr und $Q$ falsch ist gilt auch: $P \Rightarrow Q \equiv \lnot Q \Rightarrow \lnot P$. \\
+	Einfache Aussagen könne auch umgeformet werden. \\ So gilt auch $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$.
+	Auf Grund der Vielfalt der Aussagen gibt es verschiedene Beweisverfahren, die zum Teil auf die selben Aussagen angewendet werden können, oder verschiedene Arten von Aussagen beweisen können.
+	Die gängisten werden im foglenden kurz erklärt.
+	\subsection{Direkter Beweis}
+	Der direkte Beweis wird bei Implikationen verwendet. Dabei nimmt man $P$ als wahr an und leitet daraus $Q$ her.
+	\subsection{Beweis durch Kontraposition}
+	Bei der Kontraposition macht man sich die Umformung der Implikation zu nutze. Wie vorher gezeigt gilt  $P \Rightarrow Q \equiv \lnot Q \Rightarrow \lnot P$. Man zeigt also, dass wenn $Q$ falsch ist, $P$ auch falsch ist.
+	\subsection{Widerspruchsbeweis}
+	Mit dem Widerspruchsbeweis beweist man einfache Aussagen. Wenn man zum Beispiel zeigen will, dass $P$ gilt, kann man durch die oben gezeigte Umformung deim Widerspruchsbeweis auch zeigen, dass seine negation einen Widersrpuch erzeugt, also flasch ist. Denn $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$ gilt. $(Q \ \& \ \lnot Q)$ ist immer falsch, denn $Q$ kann nicht gleichzeitig richtig und flasch sein. Man könnte also auch schreiben $\lnot P \Rightarrow \bot$.
+	Beim Widerspruchbeweis nimmt man also das Gegenteil der Aussage an und zeigt, dass dies zu einem Widerspruch führt.
+	\subsection{Induktionsbeweis}
+	Der Induktionsbeweis wird verwendet, um Aussagen für alle Elemente einer bestimmten Menge zu beweisen. Bei der Menge kann es sich um verschiedene Dinge handeln. Meist handelt es sich um Zahlen, es kann aber alles mögliche sein, das sich \emph induktiv definieren lässt. Wie die Induktive Mengendefinition fuinktionert wird im nächsten Abschnitt erklärt. 
+	\subsubsection{Vollständige Induktion}
+	Bei der vollständigen Induktion entspricht die Menge immer den natürlichen Zahlen. Man beweist also beid er vollständigen Induktion, dass eine Aussage für alle natürlichen Zahlen gilt.
+	% \cite{uni-jena}
+	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
 	
-	\subsection*{Beweisarten}
-	\subsubsection*{Direkter Beweis}
-	\subsubsection*{Beweis durch Kontraposition}
-	\subsubsection*{Widerspruchsbeweis}
-	\subsubsection*{Induktionsbeweis}
+	\newpage
 	
-	
-	
+	\section{Induktive Mengendefinition}
+	Beim Festlegen einer \emph{induktiven Menge} folgt man zwei Schritten.
+	 \begin{enumerate}
+	 	\item Basismenge: Festlegung bestimmter Basisobjekte, die in der Menge M enthalten sein sollen.
+	 	\item Erzeugungsregel: Aufstellen von Regeln, mit denen sich die anderen Elemente aus den Basisobjekten ergeben 
+	 	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
+	 	\footnote{Vgl. \url{https://rg1-teaching.mpi-inf.mpg.de/old-ag2/teaching/dsl/v22-dsl.pdf} (stand 3.9.25)} 
+	 \end{enumerate}
+	 Häufig will man etwas für alle \emph{natürlichen Zahlen} beweisen. Diese haben folgende vier Eigenschaften, die auch als ihre Definition angesehen werden können: \\
+	 \begin{enumerate}
+	 	
+	 	\item \glqq  Die kleinste Natürliche Zahl ist 1.
+	 	\item Jede natürliche Zahl hat eine um 1 größere Zahl. Diese ist ihr Nachfolger.
+	 	\item Zwischen einer natürlichen Zahl und ihrem Nachfolger liegt keine weitere natürliche Zahl.
+	 	\item Es gibt keine größte natürliche Zahl. Es gibt also unendlich viele natürliche Zahlen.
+	 	\grqq
+	 \footnote{\url{https://studyflix.de/mathematik/zahlenmengen-3260/natuerliche-zahlen} (stand 3.9.25)}
+	 \end{enumerate}
+	 Anhand der ersten beiden Eigenschaften kann man schon erkennen, dass sich die natürlichen Zahlen als induktive Menge definieren lassen.
+	 
 	\begin{comment}
 	Aussagen können mit verschieden Aussageverknüpfungen miteinander zu logischen \emph{Konjunktionen} verknüpft werden. Diese Konjunktionen haben einen eigenen Wahrheitswert, sind also wahr oder falsch. Ihr Wahrheitswert hängt dabei nur von den Wahrheitswerten der Aussagen, aus der sie bestehen, und wie diese verknüpft wurden, ab.
 	Die Konjunktion \glqq $2 > 1$ und  4 ist eine Primzahl\grqq \ besteht aus den beiden Aussagen \glqq $2 > 1$\grqq \ und \glqq 4 ist eine Primzahl\grqq \, die mit der Aussagenverknüpfung \glqq und\grqq \ verknüpft sind.
@@ -51,39 +104,69 @@
 	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
 	\end{comment}
 	
-	% \section{Einleitung}            % First section
-	\section{Verwendungszweck}
-	
+	% \section{Einleitung}            % First section	
 	\section{Begriffe}
 	
-	\section{Aufbau des Beweises}
+	\newpage
+	
+	\section{Aufbau der vollständigen Induktion}
+	Die vollständige Induktionsbeweis besteht aus zwei Schritten, dem \emph Induktionsanfang und dem Induktionsschritt.
+	Wenn man die Aussage A für die Menge
+	\[
+		M := \{n \in \mathbb{N} \mid A(n)\}
+	\]
+	beweisen möchte sehen die beiden Schritte folgendermaßen aus: \\
+	\begin{itemize}
+		\item \textbf{Induktionsanfang:} Man zeigt, dass $A(1)$ wahr ist.
+		\item \textbf{Induktionsschritt:} Man zeigt, dass $A(n) \Rightarrow A(n+1)$ wahr ist. \\ % \footnote{Vgl. \url{https://www2.math.uni-wuppertal.de/~fritzsch/lectures/vorkurs/vk_k3.pdf} (stand 3.9.25)} \\
+		Auch dieser Schritt besteht aus zwei Teilen:
+		\begin{itemize}
+			\item Man nimmt man an, dass $A(n)$ wahr ist. Das ist die sogenannte \\ \emph{Induktionsvoraussetzung}.
+			\item Man leitet aus der Induktionsvorraussetzung her, das $A(n + 1) $ wahr ist. Das nennt man \emph{Induktionsschluss}.  
+			\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
+		\end{itemize}
+	\end{itemize}	
 
-	\section{Beispiel}
-	
-	Wir wollen die Aussage beweisen:
-	
+	\section{Beispiele}
+	\subsection{Gaußsche Summenformel}
+	Der Mathematiker Carl Friedrich Gauß hat die Formel
 	\[
-	A(n): 1 + 2 + \dots + n = \frac{n(n+1)}{2}, \quad \forall n \ge 1
+	1 + 2 + \dots + n = \sum_{k=1}^{n} k = \frac{n(n+1)}{2}, \quad \forall n  \in \mathbb{N}, n \ge 1
 	\]
-	
-	\subsection*{Induktionsanfang (IA)}
-	Für $n=1$:
-	
+	zur beerechnung der Summer der ersten n Zahlen aufgestellt. \footnote{Vgl. \url{https://studyflix.de/mathematik/gaussche-summenformel-2408}, (stand 3.9.25)} \\ 
+	\\
+	Folgende Aussage soll nun bewiesen werden:
 	\[
-	1 = \frac{1 \cdot (1+1)}{2} = 1
+		A(n) : 1 + 2 + \dots + n = \frac{n(n+1)}{2}, \quad \forall n  \in \mathbb{N}, n \ge 1
 	\]
+	Dafür werden die beiden Schritte des Induktionsbeweises ausgführt.
+	\subsubsection{Induktionsanfang (IA)}
+	Zeige, dass $A(1)$ gilt:
+	\\
+	\begin{comment}
+		\[
+			A(n) = \frac{n * (n + 1)}{2} 
+			\\ 
+			mit n = 1:
+		\]
+	\end{comment}
+	\[
+		\begin{aligned}
+			A(1) &= 1 \\
+			1 &= \frac{1 * (1+1)}{2} \\
+			1 &= 1 \ \checkmark
+		\end{aligned}
+	\]
+	\\
+	Die Aussage $A$ ist also für $n=1$ wahr. \(\checkmark\)
 	
-	Die Aussage ist also für $n=1$ wahr. \(\checkmark\)
-	
-	\subsection*{Induktionsschritt (IS)}
-	Angenommen, die Aussage gilt für ein beliebiges $n \ge 1$, also
-	
+	\subsubsection{Induktionsschritt (IS)}
+	Zeige, dass $A(n) \Rightarrow A(n + 1)$ gilt: \\ 
+	Dafür wird angenommen, dass $A(n)$ wahr ist (\emph{Induktionsvoraussetzung}):
 	\[
 	A(n): 1 + 2 + \dots + n = \frac{n(n+1)}{2}
 	\]
-	
-	Wir zeigen, dass daraus $A(n+1)$ folgt:
-	
+	Danach wird gezeigt, dass, wenn $A(n)$ wahr ist, auch $A(n + 1)$ wahr ist \\ (\emph{Induktionsschritt}): 
 	\[
 	\begin{aligned}
 		1 + 2 + \dots + n + (n+1) &= \frac{n(n+1)}{2} + (n+1) \\
@@ -91,15 +174,15 @@
 		&= \frac{(n+1)(n+2)}{2}
 	\end{aligned}
 	\]
+	Damit ist die Aussage $A$ auch für $n+1$ wahr. \checkmark
 	
-	Damit ist die Aussage auch für $n+1$ wahr.
-	
-	\subsection*{Schlussfolgerung}
+	\subsubsection{Schlussfolgerung}
 	Da IA und IS gezeigt wurden, gilt die Aussage für alle \\ natürlichen Zahlen $n \ge 1$.
 	
 	\section{Fazit}
 	
 	\section{Quellen}
-
-	
+	% \printbibliography
 \end{document}
+
+

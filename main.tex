@@ -20,7 +20,7 @@
 % ----- Document -----
 \begin{document}
 	
-	\title{Vollständige Induktion, \\ ein Beweisverfahren. \\
+	\title{Die vollständige Induktion, \\ ein Beweisverfahren. \\
 	Wie funktioniert es und warum ist es so wichtig?}
 	% Title
 	\author{Tom Roth}              					 % Author
@@ -135,7 +135,7 @@
 	\[
 		A(n) : 1 + 2 + \dots + n = \frac{n(n+1)}{2}, \quad \forall n  \in \mathbb{N}, n \ge 1
 	\]
-	Dafür werden die beiden Schritte des Induktionsbeweises ausgführt.
+	\newpage 
 	\subsubsection{Induktionsanfang (IA)}
 	Zeige, dass $A(1)$ gilt:
 	\\
@@ -169,12 +169,13 @@
 	
 		\[
 		\begin{aligned}
-			\sum_{k=1}^{n} k &=  \frac{n(n+1)}{2}                 && \quad| \;\text{+ $(n + 1)$} \\
-			\sum_{k=1}^{n} k + (n + 1) &=  \frac{n(n+1)}{2} + (n + 1) && \quad| \;\text{T} \\
-			\sum_{k=1}^{n + 1} k &= \frac{n(n+1)}{2} + (n + 1)    && \quad| \;\text{mit 2 erweitern} \\
-			\sum_{k=1}^{n + 1} k &= \frac{n(n+1)}{2} + \frac{2(n + 1)}{2} && \quad| \;\text{zusammenfassen} \\
-			\sum_{k=1}^{n + 1} k &= \frac{n(n+1) + 2(n + 1)}{2}   && \quad| \;\text{$(n + 1)$ ausklammern} \\
-			\sum_{k=1}^{n + 1} k &= \frac{(n+1)(n + 2)}{2}        && \quad| \;\text{Q.E.D.}
+			A(n) &=  \frac{n(n+1)}{2}                 && \quad| \;\text{+ $(n + 1)$} \\
+			A(n) + (n + 1) &=  \frac{n(n+1)}{2} + (n + 1) && \quad| \;\text{T} \\
+			1+ 2+ \dots + n + (n + 1) &=  \frac{n(n+1)}{2} + (n + 1) && \quad| \;\text{T} \\
+			A(n + 1) &= \frac{n(n+1)}{2} + (n + 1)    && \quad| \;\text{mit 2 erweitern} \\
+			&= \frac{n(n+1)}{2} + \frac{2(n + 1)}{2} && \quad| \;\text{zusammenfassen} \\
+			&= \frac{n(n+1) + 2(n + 1)}{2}   && \quad| \;\text{$(n + 1)$ ausklammern} \\
+			&= \frac{(n+1)(n + 2)}{2}        && \quad| \;\text{Q.E.D.}
 		\end{aligned}
 		\]
 	\begin{comment}

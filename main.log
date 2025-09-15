@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.8)  15 SEP 2025 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.8)  15 SEP 2025 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -399,14 +399,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--135
  []
 
 
+
+[4{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}]
 Underfull \hbox (badness 10000) in paragraph at lines 140--149
 
  []
 
 
-
-[4{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}]
 Underfull \hbox (badness 10000) in paragraph at lines 167--169
 
  []
@@ -450,7 +450,7 @@ xlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texl
 ive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texliv
 e/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/
 2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (8 pages, 299380 bytes).
+Output written on main.pdf (8 pages, 299243 bytes).
 PDF statistics:
  257 PDF objects out of 1000 (max. 8388607)
  205 compressed objects within 3 object streams

@@ -109,20 +109,17 @@
 	\newpage
 	
 	\section{Aufbau der vollständigen Induktion}
-	Die vollständige Induktionsbeweis besteht aus zwei Schritten, dem \emph Induktionsanfang und dem Induktionsschritt.
-	Wenn man die Aussage A für die Menge
-	\[
-		M := \{n \in \mathbb{N} \mid A(n)\}
-	\]
-	beweisen möchte sehen die beiden Schritte folgendermaßen aus: \\
+	Die vollständige Induktionsbeweis besteht aus zwei Schritten, dem \emph{Induktionsanfang} und dem \emph{Induktionsschritt}.
+	Wenn man eine Aussage $A$ für alle natürlichen Zahlen beweisen möchte sehen die beiden Schritte folgendermaßen aus: \\
 	\begin{itemize}
-		\item \textbf{Induktionsanfang:} Man zeigt, dass $A(1)$ wahr ist.
-		\item \textbf{Induktionsschritt:} Man zeigt, dass $A(n) \Rightarrow A(n+1)$ wahr ist. \\ % \footnote{Vgl. \url{https://www2.math.uni-wuppertal.de/~fritzsch/lectures/vorkurs/vk_k3.pdf} (stand 3.9.25)} \\
-		Auch dieser Schritt besteht aus zwei Teilen:
+		\item \textbf{Induktionsanfang:} Man zeigt, dass die Aussage für den Startwert (meist $n = 1$) wahr ist.
+		\item \textbf{Induktionsschritt:} % Man zeigt, dass $A(n) \Rightarrow A(n+1)$ wahr ist. \\ \footnote{Vgl. \url{https://www2.math.uni-wuppertal.de/~fritzsch/lectures/vorkurs/vk_k3.pdf} (stand 3.9.25)} \\
 		\begin{itemize}
-			\item Man nimmt man an, dass $A(n)$ wahr ist. Das ist die sogenannte \\ \emph{Induktionsvoraussetzung}.
-			\item Man leitet aus der Induktionsvorraussetzung her, das $A(n + 1) $ wahr ist. Das nennt man \emph{Induktionsschluss}.  
+			\item Man nimmt an, dass $A(n)$ wahr ist, die Aussage also für ein beliebiges $n$ zutrifft. Das ist die sogenannte \\ \emph{Induktionsvorraussetzung} oder \emph{Indutkionsannahme}.
+			\item Man leitet aus der Induktionsvorraussetzung her, dass $A(n + 1) $ dann auch wahr ist. Das nennt man \emph{Induktionsschluss}.
+			Die Aussage $A(n) \Rightarrow A(n + 1)$ muss also wahr sein. Dafür startet man bei $A(n)$ und kommt durch Termumformungen auf $A(n + 1)$.
 			\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
+			\footnote{Vgl. \url{https://studyflix.de/mathematik/vollstandige-induktion-2406} (stand 15.9.25)}
 		\end{itemize}
 	\end{itemize}	
 
@@ -132,7 +129,7 @@
 	\[
 	1 + 2 + \dots + n = \sum_{k=1}^{n} k = \frac{n(n+1)}{2}, \quad \forall n  \in \mathbb{N}, n \ge 1
 	\]
-	zur beerechnung der Summer der ersten n Zahlen aufgestellt. \footnote{Vgl. \url{https://studyflix.de/mathematik/gaussche-summenformel-2408}, (stand 3.9.25)} \\ 
+	zur Berechnung der Summer der ersten n Zahlen aufgestellt. \footnote{Vgl. \url{https://studyflix.de/mathematik/gaussche-summenformel-2408}, (stand 3.9.25)} \\ 
 	\\
 	Folgende Aussage soll nun bewiesen werden:
 	\[
@@ -160,23 +157,42 @@
 	Die Aussage $A$ ist also für $n=1$ wahr. \(\checkmark\)
 	
 	\subsubsection{Induktionsschritt (IS)}
-	Zeige, dass $A(n) \Rightarrow A(n + 1)$ gilt: \\ 
+	Im Induktionsschritt soll folgendes gezeigt werden:
+	\[
+	A(n) = \frac{n(n + 1)}{2} \Rightarrow A(n + 1) = \frac{(n + 1)(n + 2)}{2}
+	\]
 	Dafür wird angenommen, dass $A(n)$ wahr ist (\emph{Induktionsvoraussetzung}):
 	\[
 	A(n): 1 + 2 + \dots + n = \frac{n(n+1)}{2}
 	\]
-	Danach wird gezeigt, dass, wenn $A(n)$ wahr ist, auch $A(n + 1)$ wahr ist \\ (\emph{Induktionsschritt}): 
-	\[
-	\begin{aligned}
-		1 + 2 + \dots + n + (n+1) &= \frac{n(n+1)}{2} + (n+1) \\
-		&= \frac{n(n+1) + 2(n+1)}{2} \\
-		&= \frac{(n+1)(n+2)}{2}
-	\end{aligned}
-	\]
+	Danach wird gezeigt, dass, wenn $A(n)$ wahr ist, auch $A(n + 1)$ wahr ist \\ (\emph{Induktionsschluss}). \\
+	
+		\[
+		\begin{aligned}
+			\sum_{k=1}^{n} k &=  \frac{n(n+1)}{2}                 && \quad| \;\text{+ $(n + 1)$} \\
+			\sum_{k=1}^{n} k + (n + 1) &=  \frac{n(n+1)}{2} + (n + 1) && \quad| \;\text{T} \\
+			\sum_{k=1}^{n + 1} k &= \frac{n(n+1)}{2} + (n + 1)    && \quad| \;\text{mit 2 erweitern} \\
+			\sum_{k=1}^{n + 1} k &= \frac{n(n+1)}{2} + \frac{2(n + 1)}{2} && \quad| \;\text{zusammenfassen} \\
+			\sum_{k=1}^{n + 1} k &= \frac{n(n+1) + 2(n + 1)}{2}   && \quad| \;\text{$(n + 1)$ ausklammern} \\
+			\sum_{k=1}^{n + 1} k &= \frac{(n+1)(n + 2)}{2}        && \quad| \;\text{Q.E.D.}
+		\end{aligned}
+		\]
+	\begin{comment}
+		\[
+		\begin{aligned}
+			\underbrace{1 + 2 + \dots + n}_{\text{A(n)}} + (n+1) &= \frac{n(n+1)}{2} + (n+1) \\
+			&= \frac{n(n+1)}{2} + \frac{2(n+1)}{2} \\
+			&= \frac{(n+1)(n+2)}{2}
+		\end{aligned}
+		\]
+	\end{comment}
+		
+
+	
 	Damit ist die Aussage $A$ auch für $n+1$ wahr. \checkmark
 	
 	\subsubsection{Schlussfolgerung}
-	Da IA und IS gezeigt wurden, gilt die Aussage für alle \\ natürlichen Zahlen $n \ge 1$.
+	Aus Induktionsanfang und Induktionsschritt folgt, dass die Aussage $A$ für alle natürlichen Zahlen $n \ge 1$wahr ist.
 	
 	\section{Fazit}
 	

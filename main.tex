@@ -20,8 +20,9 @@
 % ----- Document -----
 \begin{document}
 	
-	\title{Vollständige Induktion, \\ ein Beweisverfahren
-	}   % Title
+	\title{Vollständige Induktion, \\ ein Beweisverfahren. \\
+	Wie funktioniert es und warum ist es so wichtig?}
+	% Title
 	\author{Tom Roth}              					 % Author
 	\date{2. September 2025}                    % Date (or leave empty)
 	
@@ -54,16 +55,16 @@
 		\hline
 	\end{array}
 	\]
-	Wie zu sehen ist, ist diese Aussage nur falsch, wenn $P$ wahr ist, und $Q$ falsch.
+	Wie in der Tabelle zu sehen ist, ist diese Aussage nur falsch, wenn $P$ wahr ist, und $Q$ falsch.
 	Diese Aussage kann allerdings auch umgeformt werden. \\
 	Das Kommutativ gesetz darf nicht angewendet werde. $P \Rightarrow Q \not\equiv Q \Rightarrow P$. \\
 	Die Wahrheitswerte können allerdings mithilfe des \glqq nicht\grqq -Operators negiert werde. Da die Konjunktion nur flasch ist, wenn $P$ wahr und $Q$ falsch ist gilt auch: $P \Rightarrow Q \equiv \lnot Q \Rightarrow \lnot P$. \\
 	Einfache Aussagen könne auch umgeformet werden. \\ So gilt auch $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$.
-	Auf Grund der Vielfalt der Aussagen gibt es verschiedene Beweisverfahren, die zum Teil auf die selben Aussagen angewendet werden können, oder verschiedene Arten von Aussagen beweisen können.
+	Auf Grund der Vielfalt an Aussagen gibt es verschiedene Beweisverfahren, die zum Teil auf die selben Aussagen angewendet werden können, oder verschiedene Arten von Aussagen beweisen können.
 	Die gängisten werden im foglenden kurz erklärt.
 	\subsection{Direkter Beweis}
 	Der direkte Beweis wird bei Implikationen verwendet. Dabei nimmt man $P$ als wahr an und leitet daraus $Q$ her.
-	\subsection{Beweis durch Kontraposition}
+	\subsection{Beweis durch Kontraposition (auch bekannt als indirekter Beweis)}
 	Bei der Kontraposition macht man sich die Umformung der Implikation zu nutze. Wie vorher gezeigt gilt  $P \Rightarrow Q \equiv \lnot Q \Rightarrow \lnot P$. Man zeigt also, dass wenn $Q$ falsch ist, $P$ auch falsch ist.
 	\subsection{Widerspruchsbeweis}
 	Mit dem Widerspruchsbeweis beweist man einfache Aussagen. Wenn man zum Beispiel zeigen will, dass $P$ gilt, kann man durch die oben gezeigte Umformung deim Widerspruchsbeweis auch zeigen, dass seine negation einen Widersrpuch erzeugt, also flasch ist. Denn $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$ gilt. $(Q \ \& \ \lnot Q)$ ist immer falsch, denn $Q$ kann nicht gleichzeitig richtig und flasch sein. Man könnte also auch schreiben $\lnot P \Rightarrow \bot$.
@@ -85,10 +86,10 @@
 	 	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
 	 	\footnote{Vgl. \url{https://rg1-teaching.mpi-inf.mpg.de/old-ag2/teaching/dsl/v22-dsl.pdf} (stand 3.9.25)} 
 	 \end{enumerate}
-	 Häufig will man etwas für alle \emph{natürlichen Zahlen} beweisen. Diese haben folgende vier Eigenschaften, die auch als ihre Definition angesehen werden können: \\
+	 Häufig will man etwas für alle \emph{natürlichen Zahlen} beweisen. Diese haben die folgenden vier Eigenschaften: \\
 	 \begin{enumerate}
 	 	
-	 	\item \glqq  Die kleinste Natürliche Zahl ist 1.
+	 	\item \glqq  Die kleinste natürliche Zahl ist 1.
 	 	\item Jede natürliche Zahl hat eine um 1 größere Zahl. Diese ist ihr Nachfolger.
 	 	\item Zwischen einer natürlichen Zahl und ihrem Nachfolger liegt keine weitere natürliche Zahl.
 	 	\item Es gibt keine größte natürliche Zahl. Es gibt also unendlich viele natürliche Zahlen.
@@ -103,10 +104,8 @@
 	Da bei einer und-verknüpfung beide Aussage wahr sein müssen, ist die Konjunktion falsch, da die Aussage \glqq 4 ist eine Primzahl\grqq \ flasch ist.
 	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
 	\end{comment}
-	
-	% \section{Einleitung}            % First section	
-	\section{Begriffe}
-	
+
+
 	\newpage
 	
 	\section{Aufbau der vollständigen Induktion}

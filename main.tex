@@ -70,9 +70,9 @@
 	Mit dem Widerspruchsbeweis beweist man einfache Aussagen. Wenn man zum Beispiel zeigen will, dass $P$ gilt, kann man durch die oben gezeigte Umformung deim Widerspruchsbeweis auch zeigen, dass seine negation einen Widersrpuch erzeugt, also flasch ist. Denn $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$ gilt. $(Q \ \& \ \lnot Q)$ ist immer falsch, denn $Q$ kann nicht gleichzeitig richtig und flasch sein. Man könnte also auch schreiben $\lnot P \Rightarrow \bot$.
 	Beim Widerspruchbeweis nimmt man also das Gegenteil der Aussage an und zeigt, dass dies zu einem Widerspruch führt.
 	\subsection{Induktionsbeweis}
-	Der Induktionsbeweis wird verwendet, um Aussagen für alle Elemente einer bestimmten Menge zu beweisen. Bei der Menge kann es sich um verschiedene Dinge handeln. Meist handelt es sich um Zahlen, es kann aber alles mögliche sein, das sich \emph induktiv definieren lässt. Wie die Induktive Mengendefinition fuinktionert wird im nächsten Abschnitt erklärt. 
+	Der Induktionsbeweis wird verwendet, um Aussagen für alle Elemente einer bestimmten Menge zu beweisen. Bei der Menge kann es sich um verschiedene Dinge handeln. Meist will man etwas für alle natürlichen Zahlen beweisen, es kann aber jede Menge sein, die sich \emph{induktiv} definieren lässt. Wie die Induktive Mengendefinition fuinktionert wird im nächsten Abschnitt erklärt. 
 	\subsubsection{Vollständige Induktion}
-	Bei der vollständigen Induktion entspricht die Menge immer den natürlichen Zahlen. Man beweist also beid er vollständigen Induktion, dass eine Aussage für alle natürlichen Zahlen gilt.
+	Bei der vollständigen Induktion entspricht die Menge immer den natürlichen Zahlen. Man beweist also bei der vollständigen Induktion, dass eine Aussage für alle natürlichen Zahlen gilt.
 	% \cite{uni-jena}
 	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
 	
@@ -96,7 +96,7 @@
 	 	\grqq
 	 \footnote{\url{https://studyflix.de/mathematik/zahlenmengen-3260/natuerliche-zahlen} (stand 3.9.25)}
 	 \end{enumerate}
-	 Anhand der ersten beiden Eigenschaften kann man schon erkennen, dass sich die natürlichen Zahlen als induktive Menge definieren lassen.
+	 Anhand der ersten beiden Eigenschaften kann man schon erkennen, dass die natürlichen Zahlen eine induktive Menge sind.
 	 
 	\begin{comment}
 	Aussagen können mit verschieden Aussageverknüpfungen miteinander zu logischen \emph{Konjunktionen} verknüpft werden. Diese Konjunktionen haben einen eigenen Wahrheitswert, sind also wahr oder falsch. Ihr Wahrheitswert hängt dabei nur von den Wahrheitswerten der Aussagen, aus der sie bestehen, und wie diese verknüpft wurden, ab.
@@ -117,7 +117,7 @@
 		\begin{itemize}
 			\item Man nimmt an, dass $A(n)$ wahr ist, die Aussage also für ein beliebiges $n$ zutrifft. Das ist die sogenannte \\ \emph{Induktionsvorraussetzung} oder \emph{Indutkionsannahme}.
 			\item Man leitet aus der Induktionsvorraussetzung her, dass $A(n + 1) $ dann auch wahr ist. Das nennt man \emph{Induktionsschluss}.
-			Die Aussage $A(n) \Rightarrow A(n + 1)$ muss also wahr sein. Dafür startet man bei $A(n)$ und kommt durch Termumformungen auf $A(n + 1)$.
+			Die Aussage $A(n) \Rightarrow A(n + 1)$ muss also wahr sein. Dafür startet man bei $A(n)$  und erweiter diese Aussage um den $n + 1$-ten Term, und kommt dann durch Umformungen auf $A(n + 1)$.
 			\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
 			\footnote{Vgl. \url{https://studyflix.de/mathematik/vollstandige-induktion-2406} (stand 15.9.25)}
 		\end{itemize}

@@ -9,9 +9,11 @@
 \usepackage{xurl}
 \usepackage[flushmargin]{footmisc} % Fußnoten ohne Einrückung
 \usepackage{verbatim} %Kommentare
-
-% \usepackage[backend=biber,style=alphabetic]{biblatex}
-% \addbibresource{literatur.bib} % Name deiner .bib-Datei
+\usepackage{graphicx} %bilder
+%\usepackage[style=footnote, sorting=none, backend=biber]{biblatex}
+%\addbibresource{literatur.bib}
+ \usepackage[backend=biber,style=alphabetic]{biblatex}
+ \addbibresource{literatur.bib} % Name deiner .bib-Datei
 
 
 
@@ -195,8 +197,80 @@
 	\subsubsection{Schlussfolgerung}
 	Aus Induktionsanfang und Induktionsschritt folgt, dass die Aussage $A$ für alle natürlichen Zahlen $n \ge 1$wahr ist.
 	
-	\section{Fazit}
+	\subsection{Beispiel aus der analytischen Geometrie: Die maximale Anzahl an Schnittpunkten von n Geraden}
+	Es sollen $n$ zueinander nicht parallele so gezeichnet werden, dass sich möglichst viele Schnittpunkte $S$	ergebe.
+	Skizze:
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.8\textwidth]{n_geraden_skizze.png}
+			\caption{Lambacher Schweizer Mathematik für Gymnasien, Kursstufe – Leistungsfach, 2016, S. 286, Abb. 1.}
+			\label{fig:Geraden mit maximaler Anzahl an Schnittpunkten Skizze}
+		\end{figure}
+		
+		
+	Für die ersten Paar Geraden ergibt sich folgende Tabelle für $n$ und $S$:
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.2\textwidth]{n_geraden_tabelle.png}
+			\caption{Lambacher Schweizer Mathematik für Gymnasien, Kursstufe – Leistungsfach, 2016, S. 286, Fig. 1.}
+			\label{fig:Geraden mit maximaler Anzahl an Schnittpunkten Tabelle}
+		\end{figure}
 	
+	Für den Zusammenhang zwischen Anzahl der nicht parallelen Geraden $n$ und deren maximale Anzahl an Schnittpunkte $S$ soll nun folgende Abhängigkeit bewiesen werden: \\
+	
+		\[
+			S(n) = \frac{1}{2} \cdot n \cdot (n - 1)
+		\]
+	Diese Aussage soll nun bewiesen werden.
+	
+	\subsubsection{Induktionsanfang (IA)}
+	Zuerst muss die Aussage für die erste Natürliche Zahl bewiesen werden.
+	Wenn man in der Tabelle nachschaut, sollten sich bei $n=1$ $0$ Schnittpunkte ergeben.
+	$S(1)$ sollte also $0$ ergeben.
+	\[
+	\begin{aligned}
+		S(1) &= 0 \\
+		0 &= \frac{1}{2} \cdot 1 \cdot (1 - 1) \\
+		0 &= \frac{1}{2} \cdot 1 \cdot 0 \\
+		0 &= 0 && \quad| \;\text{Q.E.D.}
+	\end{aligned}
+	\]
+	
+	\subsubsection{INduktionsschritt (IS)}
+	Bei jeder nächten Gerade, also der $n + 1$-ten kommen maximal $n$ Schnittpunkte dazu, da die $n + 1$-te Gerade maximal alle bisherigen einmal schneiden kann.
+	Das wird auch bei folgendem Bild klar:
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{n+1_graphen_skizze.png}
+		\caption{Lambacher Schweizer Mathematik für Gymnasien, Kursstufe – Leistungsfach, 2016, S. 286, Abb. 3.}
+		\label{fig:Neue SChnittpunkte bei n-ter Gerade}
+	\end{figure}
+	\newpage
+	Man nimmt also an, dass $S(n)$ wahr ist (Induktionsannahme) und zeigt, dass dann auch $S(n + 1)$ wahr ist.
+	Das folgende soll also gelten:
+	\[
+		S(n + 1) = S(n) + n
+	\]
+
+	Das wird durch Umformen gezeigt:
+	
+	\[
+		\begin{aligned}
+			\frac{1}{2} \cdot (n + 1) \cdot ((n + 1) - 1) &= \frac{1}{2} \cdot n \cdot (n - 1) + n && \quad| \;\text{T} \\
+			\frac{1}{2} \cdot (n + 1) \cdot n &= \frac{1}{2} \cdot (n^2 - n) + n  && \quad| \;\text{Ausklammern} \\
+			\frac{1}{2} \cdot (n^2 + n) &= \frac{1}{2} \cdot (n^2 - n + 2n) && \quad| \;\text{T} \\
+			\frac{1}{2} \cdot (n^2 + n) &= \frac{1}{2} \cdot (n^2 + n) && \quad| \;\text{Q.E.D.} 
+		\end{aligned}
+	\]
+	
+	\subsubsection{Kettneschluss}
+	Da die Aussage für die erste natürliche Zahl gilt(IA) und für alle Nachfolger(IS), gilt die Aussage für alle natürlichen Zahlen.
+	\footnote{Vgl. Lambacher Schweizer Mathematik für Gymnasien, Kursstufe – Leistungsfach, 2016, S. 286, Problem 1}
+
+	\section{Fazit}
+		Die vollständige Induktion ist ein Beweiseverfahren, dass sich eignet, um eine Aussage für alle natürliche Zahlen zu beweisen. 	
+		Es ist sehr effizient, da man in nur drei Schritten unendlich viele Fälle beweist. So müsste man bei den beiden Beispielen ohne die vollstände Induktion die Aussagen für alle natürliche Zahlen einzeln beweisen.
+		\footnote{Vgl. https://studyflix.de/mathematik/vollstandige-induktion-2406 (stand 18.11.25)}
 	\section{Quellen}
 	% \printbibliography
 \end{document}

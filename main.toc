@@ -18,3 +18,5 @@
 \contentsline {subsubsection}{\numberline {4.2.3}Kettneschluss}{8}{subsubsection.4.2.3}%
 \contentsline {section}{\numberline {5}Fazit}{8}{section.5}%
 \contentsline {section}{\numberline {6}Quellen}{8}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Textquellen}{8}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Bildquellen}{9}{subsection.6.2}%

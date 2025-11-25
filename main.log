@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.11.18)  18 NOV 2025 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.11.18)  25 NOV 2025 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -726,12 +726,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--171
 
 
 [5]
-<n_geraden_skizze.png, id=181, 420.06938pt x 307.1475pt>
+<n_geraden_skizze.png, id=191, 420.06938pt x 307.1475pt>
 File: n_geraden_skizze.png Graphic file (type png)
 <use n_geraden_skizze.png>
 Package pdftex.def Info: n_geraden_skizze.png  used on input line 205.
 (pdftex.def)             Requested size: 312.00119pt x 228.12918pt.
-<n_geraden_tabelle.png, id=183, 194.22563pt x 197.98969pt>
+<n_geraden_tabelle.png, id=193, 194.22563pt x 197.98969pt>
 File: n_geraden_tabelle.png Graphic file (type png)
 <use n_geraden_tabelle.png>
 Package pdftex.def Info: n_geraden_tabelle.png  used on input line 214.
@@ -744,7 +744,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
 
 [6 <./n_geraden_skizze.png> <./n_geraden_tabelle.png>]
-<n+1_graphen_skizze.png, id=192, 411.03563pt x 158.09062pt>
+<n+1_graphen_skizze.png, id=202, 411.03563pt x 158.09062pt>
 File: n+1_graphen_skizze.png Graphic file (type png)
 <use n+1_graphen_skizze.png>
 Package pdftex.def Info: n+1_graphen_skizze.png  used on input line 244.
@@ -752,32 +752,49 @@ Package pdftex.def Info: n+1_graphen_skizze.png  used on input line 244.
 
 
 [7 <./n+1_graphen_skizze.png>]
+Overfull \hbox (57.8987pt too wide) in paragraph at lines 280--281
+[]\T1/cmr/m/n/12 https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das
+-mathematische-
+ []
 
-[8] (./main.aux)
+
+Overfull \hbox (34.14333pt too wide) in paragraph at lines 281--282
+[]\T1/cmr/m/n/12 https://rg1-teaching.mpi-inf.mpg.de/old-ag2/teaching/dsl/v22-d
+sl.pdf (stand
+ []
+
+
+Overfull \hbox (11.8239pt too wide) in paragraph at lines 282--283
+[]\T1/cmr/m/n/12 https://studyflix.de/mathematik/zahlenmengen-3260/natuerliche-
+zahlen
+ []
+
+
+
+[8]
+Overfull \hbox (33.49072pt too wide) in paragraph at lines 283--284
+[]\T1/cmr/m/n/12 https://studyflix.de/mathematik/vollstandige-induktion-2406 (s
+tand 15.9.25) 
+ []
+
+
+
+[9] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 462C4DF1093987BFCDF2BFD2C798EBEF;3546.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: DAF93320F394962F834E3090A85A5BED;3772.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18832 strings out of 474513
- 326286 string characters out of 5748497
- 1263490 words of memory out of 5000000
- 41607 multiletter control sequences out of 15000+600000
+ 18846 strings out of 474513
+ 326412 string characters out of 5748497
+ 1262493 words of memory out of 5000000
+ 41609 multiletter control sequences out of 15000+600000
  576521 words of font info for 82 fonts, out of 8000000 for 9000
  352 hyphenation exceptions out of 8191
  75i,12n,81p,693b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -797,10 +814,10 @@ ublic/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
 sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></
 usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf
 -dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (10 pages, 377392 bytes).
+Output written on main.pdf (11 pages, 378643 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
- 244 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

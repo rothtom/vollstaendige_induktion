@@ -69,14 +69,14 @@
 	\subsection{Beweis durch Kontraposition (auch bekannt als indirekter Beweis)}
 	Bei der Kontraposition macht man sich die Umformung der Implikation zu nutze. Wie vorher gezeigt gilt  $P \Rightarrow Q \equiv \lnot Q \Rightarrow \lnot P$. Man zeigt also, dass wenn $Q$ falsch ist, $P$ auch falsch ist.
 	\subsection{Widerspruchsbeweis}
-	Mit dem Widerspruchsbeweis beweist man einfache Aussagen. Wenn man zum Beispiel zeigen will, dass $P$ gilt, kann man durch die oben gezeigte Umformung beim Widerspruchsbeweis auch zeigen, dass seine Negation einen Widerspruch erzeugt, also flasch ist. Denn $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$ gilt. $(Q \ \& \ \lnot Q)$ ist immer falsch, denn $Q$ kann nicht gleichzeitig richtig und falsch sein. Man könnte also auch schreiben $\lnot P \Rightarrow \bot$.
+	Mit dem Widerspruchsbeweis beweist man einfache Aussagen. Wenn man zum Beispiel zeigen will, dass $P$ gilt, kann man durch die oben gezeigte Umformung beim Widerspruchsbeweis auch zeigen, dass seine Negation einen Widerspruch erzeugt, also falsch ist. Denn $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$ gilt. $(Q \ \& \ \lnot Q)$ ist immer falsch, denn $Q$ kann nicht gleichzeitig richtig und falsch sein. Man könnte also auch schreiben $\lnot P \Rightarrow \bot$.
 	Beim Widerspruchsbeweis nimmt man also das Gegenteil der Aussage an und zeigt, dass dies zu einem Widerspruch führt.
 	\subsection{Induktionsbeweis}
 	Der Induktionsbeweis wird verwendet, um Aussagen für alle Elemente einer bestimmten Menge zu beweisen. Bei der Menge kann es sich um verschiedene Dinge handeln. Meist will man etwas für alle natürlichen Zahlen beweisen, es kann aber jede Menge sein, die sich \emph{induktiv} definieren lässt. Wie die Induktive Mengendefinition funktioniert wird im nächsten Abschnitt erklärt. 
 	\subsubsection{Vollständige Induktion}
 	Bei der vollständigen Induktion entspricht die Menge immer den natürlichen Zahlen. Man beweist also bei der vollständigen Induktion, dass eine Aussage für alle natürlichen Zahlen gilt.
 	% \cite{uni-jena}
-	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
+	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (Stand2.9.25)}
 	
 	\newpage
 	
@@ -85,8 +85,8 @@
 	 \begin{enumerate}
 	 	\item Basismenge: Festlegung bestimmter Basisobjekte, die in der Menge M enthalten sein sollen.
 	 	\item Erzeugungsregel: Aufstellen von Regeln, mit denen sich die anderen Elemente aus den Basisobjekten ergeben 
-	 	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
-	 	\footnote{Vgl. \url{https://rg1-teaching.mpi-inf.mpg.de/old-ag2/teaching/dsl/v22-dsl.pdf} (stand 3.9.25)} 
+	 	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (Stand 2.9.25)}
+	 	\footnote{Vgl. \url{https://rg1-teaching.mpi-inf.mpg.de/old-ag2/teaching/dsl/v22-dsl.pdf} (Stand 3.9.25)} 
 	 \end{enumerate}
 	 Häufig will man etwas für alle \emph{natürlichen Zahlen} beweisen. Diese haben die folgenden vier Eigenschaften: \\
 	 \begin{enumerate}
@@ -96,15 +96,15 @@
 	 	\item Zwischen einer natürlichen Zahl und ihrem Nachfolger liegt keine weitere natürliche Zahl.
 	 	\item Es gibt keine größte natürliche Zahl. Es gibt also unendlich viele natürliche Zahlen.
 	 	\grqq
-	 \footnote{Vgl. \url{https://studyflix.de/mathematik/zahlenmengen-3260/natuerliche-zahlen} (stand 3.9.25)}
+	 \footnote{Vgl. \url{https://studyflix.de/mathematik/zahlenmengen-3260/natuerliche-zahlen} (Stand 3.9.25)}
 	 \end{enumerate}
 	 Anhand der ersten beiden Eigenschaften kann man schon erkennen, dass die natürlichen Zahlen eine induktive Menge sind.
 	 
 	\begin{comment}
 	Aussagen können mit verschieden Aussageverknüpfungen miteinander zu logischen \emph{Konjunktionen} verknüpft werden. Diese Konjunktionen haben einen eigenen Wahrheitswert, sind also wahr oder falsch. Ihr Wahrheitswert hängt dabei nur von den Wahrheitswerten der Aussagen, aus der sie bestehen, und wie diese verknüpft wurden, ab.
 	Die Konjunktion \glqq $2 > 1$ und  4 ist eine Primzahl\grqq \ besteht aus den beiden Aussagen \glqq $2 > 1$\grqq \ und \glqq 4 ist eine Primzahl\grqq \, die mit der Aussagenverknüpfung \glqq und\grqq \ verknüpft sind.
-	Da bei einer und-verknüpfung beide Aussage wahr sein müssen, ist die Konjunktion falsch, da die Aussage \glqq 4 ist eine Primzahl\grqq \ flasch ist.
-	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
+	Da bei einer und-verknüpfung beide Aussage wahr sein müssen, ist die Konjunktion falsch, da die Aussage \glqq 4 ist eine Primzahl\grqq \ falsch ist.
+	\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (Stand 2.9.25)}
 	\end{comment}
 
 
@@ -113,17 +113,20 @@
 	\section{Aufbau der vollständigen Induktion}
 	Der vollständige Induktionsbeweis besteht aus zwei Schritten, dem \emph{Induktionsanfang} und dem \emph{Induktionsschritt}.
 	Wenn man eine Aussage $A$ für alle natürlichen Zahlen beweisen möchte sehen die beiden Schritte folgendermaßen aus: \\
-	\begin{itemize}
-		\item \textbf{Induktionsanfang:} Man zeigt, dass die Aussage für den Startwert (meist $n = 1$) wahr ist.
-		\item \textbf{Induktionsschritt:} % Man zeigt, dass $A(n) \Rightarrow A(n+1)$ wahr ist. \\ \footnote{Vgl. \url{https://www2.math.uni-wuppertal.de/~fritzsch/lectures/vorkurs/vk_k3.pdf} (stand 3.9.25)} \\
+	
+	\begin{enumerate}
+		\item $"$Induktionsanfang: Zeige, dass die Aussage für den Startwert gilt (meistens n=1) 
+		\item Induktionsschritt: Dieser besteht aus:
 		\begin{itemize}
-			\item Man nimmt an, dass $A(n)$ wahr ist, die Aussage also für ein beliebiges $n$ zutrifft. Das ist die sogenannte \\ \emph{Induktionsvoraussetzung} oder \emph{Indutkionsannahme}.
-			\item Man leitet aus der Induktionsvoraussetzung her, dass $A(n + 1) $ dann auch wahr ist. Das nennt man \emph{Induktionsschluss}.
-			Die Aussage $A(n) \Rightarrow A(n + 1)$ muss also wahr sein. Dafür startet man bei $A(n)$  und erweitert diese Aussage um den $n + 1$-ten Term, und kommt dann durch Umformungen auf $A(n + 1)$.
-			\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
-			\footnote{Vgl. \url{https://studyflix.de/mathematik/vollstandige-induktion-2406} (stand 15.9.25)}
+			\item Induktionsvoraussetzung oder Induktionsannahme: Ab jetzt gehst du davon aus, dass die Aussage für ein beliebiges $n \in \mathbb{N}$ gilt.
+			\item Induktionsbehauptung: Hier sagst du einfach, dass die Aussage dann auch für n+1 gelten muss.
+			
 		\end{itemize}
-	\end{itemize}	
+		Induktionsschluss: Jetzt zeigst du mit Hilfe der Induktionsvoraussetzung, dass die Aussage tatsächlich auch für n+1 gilt.$"$
+		\footnote{\url{https://studyflix.de/mathematik/vollstandige-induktion-2406} (Stand 15.9.25)}
+			
+	\end{enumerate}	
+	
 
 	\section{Beispiele}
 	\subsection{Gaußsche Summenformel}
@@ -131,7 +134,7 @@
 	\[
 	1 + 2 + \dots + n = \sum_{k=1}^{n} k = \frac{n(n+1)}{2}, \quad \forall n  \in \mathbb{N}, n \ge 1
 	\]
-	zur Berechnung der Summe der ersten n Zahlen aufgestellt. \footnote{Vgl. \url{https://studyflix.de/mathematik/gaussche-summenformel-2408}, (stand 3.9.25)} \\ 
+	zur Berechnung der Summe der ersten n Zahlen aufgestellt. \footnote{Vgl. \url{https://studyflix.de/mathematik/gaussche-summenformel-2408}, (Stand 3.9.25)} \\ 
 	\\
 	Folgende Aussage soll nun bewiesen werden:
 	\[
@@ -224,7 +227,7 @@
 	Diese Aussage soll nun bewiesen werden.
 	
 	\subsubsection{Induktionsanfang (IA)}
-	Zuerst muss die Aussage für die erste natürliche Zahl bewiesen werden.
+	Zuerst muss die Aussage für die erste natürliche Zahl gezeigt werden.
 	Wenn man in der Tabelle nachschaut, sollten sich bei $n=1$ $0$ Schnittpunkte ergeben.
 	$S(1)$ sollte also $0$ ergeben.
 	\[
@@ -268,9 +271,9 @@
 	\footnote{Vgl. Lambacher Schweizer Mathematik für Gymnasien, Kursstufe – Leistungsfach, 2016, S. 286, Problem 1}
 
 	\section{Fazit}
-		Die vollständige Induktion ist ein Beweiseverfahren, dass sich eignet, um eine Aussage für alle natürliche Zahlen zu beweisen. 	
+		Die vollständige Induktion ist ein Beweiseverfahren, das sich eignet, um eine Aussage für alle natürliche Zahlen zu beweisen. 	
 		Es ist sehr effizient, da man in nur drei Schritten unendlich viele Fälle beweist. So müsste man bei den beiden Beispielen ohne die vollständige Induktion die Aussagen für alle natürlichen Zahlen einzeln beweisen.
-		\footnote{Vgl. \url{https://studyflix.de/mathematik/vollstandige-induktion-2406} (stand 18.11.25)}
+		\footnote{Vgl. \url{https://studyflix.de/mathematik/vollstandige-induktion-2406} (Stand 18.11.25)}
 	\newpage
 	\section{Quellen}
 	% \printbibliography
@@ -278,11 +281,11 @@
 	% \bibliography{literatur.bib}
 	\subsection{Textquellen}
 	\begin{enumerate}
-		\item{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf (stand 2.9.25)}
-		\item{https://rg1-teaching.mpi-inf.mpg.de/old-ag2/teaching/dsl/v22-dsl.pdf (stand 3.9.25)}
-		\item{https://studyflix.de/mathematik/zahlenmengen-3260/natuerliche-zahlen (stand 3.9.25)}
-		\item{https://studyflix.de/mathematik/vollstandige-induktion-2406 (stand 15.9.25)}
-		\item{https://studyflix.de/mathematik/gaussche-summenformel-2408 (stand 3.9.25)}
+		\item{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf (Stand 2.9.25)}
+		\item{https://rg1-teaching.mpi-inf.mpg.de/old-ag2/teaching/dsl/v22-dsl.pdf (Stand 3.9.25)}
+		\item{https://studyflix.de/mathematik/zahlenmengen-3260/natuerliche-zahlen (Stand 3.9.25)}
+		\item{https://studyflix.de/mathematik/vollstandige-induktion-2406 (Stand 15.9.25)}
+		\item{https://studyflix.de/mathematik/gaussche-summenformel-2408 (Stand 3.9.25)}
 		\item{Lambacher Schweizer Mathematik für Gymnasien, Kursstufe – Leistungsfach, 2016, S. 286, Problem 1}
 		
 		

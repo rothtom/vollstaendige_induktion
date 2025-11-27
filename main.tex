@@ -91,7 +91,7 @@
 	 Häufig will man etwas für alle \emph{natürlichen Zahlen} beweisen. Diese haben die folgenden vier Eigenschaften: \\
 	 \begin{enumerate}
 	 	
-	 	\item \glqq  Die kleinste natürliche Zahl ist 1.
+	 	\item \glqq Die kleinste natürliche Zahl ist 1.
 	 	\item Jede natürliche Zahl hat eine um 1 größere Zahl. Diese ist ihr Nachfolger.
 	 	\item Zwischen einer natürlichen Zahl und ihrem Nachfolger liegt keine weitere natürliche Zahl.
 	 	\item Es gibt keine größte natürliche Zahl. Es gibt also unendlich viele natürliche Zahlen.
@@ -115,14 +115,15 @@
 	Wenn man eine Aussage $A$ für alle natürlichen Zahlen beweisen möchte sehen die beiden Schritte folgendermaßen aus: \\
 	
 	\begin{enumerate}
-		\item $"$Induktionsanfang: Zeige, dass die Aussage für den Startwert gilt (meistens n=1) 
+		
+		\item "`Induktionsanfang: Zeige, dass die Aussage für den Startwert gilt (meistens n=1) 
 		\item Induktionsschritt: Dieser besteht aus:
 		\begin{itemize}
 			\item Induktionsvoraussetzung oder Induktionsannahme: Ab jetzt gehst du davon aus, dass die Aussage für ein beliebiges $n \in \mathbb{N}$ gilt.
 			\item Induktionsbehauptung: Hier sagst du einfach, dass die Aussage dann auch für n+1 gelten muss.
 			
 		\end{itemize}
-		Induktionsschluss: Jetzt zeigst du mit Hilfe der Induktionsvoraussetzung, dass die Aussage tatsächlich auch für n+1 gilt.$"$
+		Induktionsschluss: Jetzt zeigst du mit Hilfe der Induktionsvoraussetzung, dass die Aussage tatsächlich auch für n+1 gilt."'
 		\footnote{\url{https://studyflix.de/mathematik/vollstandige-induktion-2406} (Stand 15.9.25)}
 			
 	\end{enumerate}	
@@ -154,7 +155,7 @@
 	\[
 		\begin{aligned}
 			A(1) &= 1 \\
-			1 &= \frac{1 * (1+1)}{2} \\
+			1 &= \frac{1 \cdot (1+1)}{2} \\
 			1 &= 1 \ \checkmark
 		\end{aligned}
 	\]
@@ -180,7 +181,7 @@
 			A(n + 1) &= \frac{n(n+1)}{2} + (n + 1)    && \quad| \;\text{mit 2 erweitern} \\
 			&= \frac{n(n+1)}{2} + \frac{2(n + 1)}{2} && \quad| \;\text{zusammenfassen} \\
 			&= \frac{n(n+1) + 2(n + 1)}{2}   && \quad| \;\text{$(n + 1)$ ausklammern} \\
-			&= \frac{(n+1)(n + 2)}{2}        && \quad| \;\text{Q.E.D.}
+			&= \frac{(n+1)(n + 2)}{2}        && \quad| \;\text{\qed}
 		\end{aligned}
 		\]
 	\begin{comment}

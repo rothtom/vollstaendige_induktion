@@ -40,7 +40,7 @@
 	
 	\section{Mathematisches Beweisen}
 	Ein Beweis in der Mathematik ist eine logisch fehlerfreie Herleitung einer Aussage aus zuvor als wahr angesehener Aussagen. Diese zuvor als wahr angesehen Aussagen werden als \emph{Axiome} bezeichnet.
-	Aussagen in der Mathemaik sind Sätze, die als wahr oder falsch angesehen werden können. Der Satz \glqq Für alle ungeraden natürlichen Zahlen $m$ und $n$ ist die Summe $m + n$ eine gerade Zahl\grqq \ wäre ein gutes Beispiel für eine mathematische Aussage. Dabei werden zwei Aussagen mit einer Aussageverknüpfung, hier \glqq und\grqq , \ zu einer Konjunktion verknüpft, die ihren eigenen Wahrheitswert besitzt.
+	Aussagen in der Mathematik sind Sätze, die als wahr oder falsch angesehen werden können. Der Satz \glqq Für alle ungeraden natürlichen Zahlen $m$ und $n$ ist die Summe $m + n$ eine gerade Zahl\grqq \ wäre ein gutes Beispiel für eine mathematische Aussage. Dabei werden zwei Aussagen mit einer Aussageverknüpfung, hier \glqq und\grqq , \ zu einer Konjunktion verknüpft, die ihren eigenen Wahrheitswert besitzt.
 	Meist sollen Aussagen der Form $\forall x(P(x) \Rightarrow Q(x))$, also wenn . Hierbei sind die beiden Aussagen $P$ und $Q$ mit einer \glqq wenn, dann\grqq -Verknüpfung miteinander verknüpft. 
 	Diese Art von Konjunktionen nennt man \emph{Implikationen.}
 	Es soll also bewiesen werden, dass wenn $P$ gilt, $Q$ auch gilt. \\	
@@ -59,20 +59,20 @@
 	\]
 	Wie in der Tabelle zu sehen ist, ist diese Aussage nur falsch, wenn $P$ wahr ist, und $Q$ falsch.
 	Diese Aussage kann allerdings auch umgeformt werden. \\
-	Das Kommutativ gesetz darf nicht angewendet werde. $P \Rightarrow Q \not\equiv Q \Rightarrow P$. \\
-	Die Wahrheitswerte können allerdings mithilfe des \glqq nicht\grqq -Operators negiert werde. Da die Konjunktion nur flasch ist, wenn $P$ wahr und $Q$ falsch ist gilt auch: $P \Rightarrow Q \equiv \lnot Q \Rightarrow \lnot P$. \\
-	Einfache Aussagen könne auch umgeformet werden. \\ So gilt auch $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$.
+	Das Kommutativgesetz darf nicht angewendet werde. $P \Rightarrow Q \not\equiv Q \Rightarrow P$. \\
+	Die Wahrheitswerte können allerdings mithilfe des \glqq nicht\grqq -Operators negiert werden. Da die Konjunktion nur falsch ist, wenn $P$ wahr und $Q$ falsch ist gilt auch: $P \Rightarrow Q \equiv \lnot Q \Rightarrow \lnot P$. \\
+	Einfache Aussagen können auch umgeformt werden. \\ So gilt auch $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$.
 	Auf Grund der Vielfalt an Aussagen gibt es verschiedene Beweisverfahren, die zum Teil auf die selben Aussagen angewendet werden können, oder verschiedene Arten von Aussagen beweisen können.
-	Die gängisten werden im foglenden kurz erklärt.
+	Die gängigsten werden im folgenden kurz erklärt.
 	\subsection{Direkter Beweis}
 	Der direkte Beweis wird bei Implikationen verwendet. Dabei nimmt man $P$ als wahr an und leitet daraus $Q$ her.
 	\subsection{Beweis durch Kontraposition (auch bekannt als indirekter Beweis)}
 	Bei der Kontraposition macht man sich die Umformung der Implikation zu nutze. Wie vorher gezeigt gilt  $P \Rightarrow Q \equiv \lnot Q \Rightarrow \lnot P$. Man zeigt also, dass wenn $Q$ falsch ist, $P$ auch falsch ist.
 	\subsection{Widerspruchsbeweis}
-	Mit dem Widerspruchsbeweis beweist man einfache Aussagen. Wenn man zum Beispiel zeigen will, dass $P$ gilt, kann man durch die oben gezeigte Umformung deim Widerspruchsbeweis auch zeigen, dass seine negation einen Widersrpuch erzeugt, also flasch ist. Denn $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$ gilt. $(Q \ \& \ \lnot Q)$ ist immer falsch, denn $Q$ kann nicht gleichzeitig richtig und flasch sein. Man könnte also auch schreiben $\lnot P \Rightarrow \bot$.
-	Beim Widerspruchbeweis nimmt man also das Gegenteil der Aussage an und zeigt, dass dies zu einem Widerspruch führt.
+	Mit dem Widerspruchsbeweis beweist man einfache Aussagen. Wenn man zum Beispiel zeigen will, dass $P$ gilt, kann man durch die oben gezeigte Umformung beim Widerspruchsbeweis auch zeigen, dass seine Negation einen Widerspruch erzeugt, also flasch ist. Denn $P \equiv \lnot P \Rightarrow (Q \ \& \ \lnot Q)$ gilt. $(Q \ \& \ \lnot Q)$ ist immer falsch, denn $Q$ kann nicht gleichzeitig richtig und falsch sein. Man könnte also auch schreiben $\lnot P \Rightarrow \bot$.
+	Beim Widerspruchsbeweis nimmt man also das Gegenteil der Aussage an und zeigt, dass dies zu einem Widerspruch führt.
 	\subsection{Induktionsbeweis}
-	Der Induktionsbeweis wird verwendet, um Aussagen für alle Elemente einer bestimmten Menge zu beweisen. Bei der Menge kann es sich um verschiedene Dinge handeln. Meist will man etwas für alle natürlichen Zahlen beweisen, es kann aber jede Menge sein, die sich \emph{induktiv} definieren lässt. Wie die Induktive Mengendefinition fuinktionert wird im nächsten Abschnitt erklärt. 
+	Der Induktionsbeweis wird verwendet, um Aussagen für alle Elemente einer bestimmten Menge zu beweisen. Bei der Menge kann es sich um verschiedene Dinge handeln. Meist will man etwas für alle natürlichen Zahlen beweisen, es kann aber jede Menge sein, die sich \emph{induktiv} definieren lässt. Wie die Induktive Mengendefinition funktioniert wird im nächsten Abschnitt erklärt. 
 	\subsubsection{Vollständige Induktion}
 	Bei der vollständigen Induktion entspricht die Menge immer den natürlichen Zahlen. Man beweist also bei der vollständigen Induktion, dass eine Aussage für alle natürlichen Zahlen gilt.
 	% \cite{uni-jena}
@@ -111,15 +111,15 @@
 	\newpage
 	
 	\section{Aufbau der vollständigen Induktion}
-	Die vollständige Induktionsbeweis besteht aus zwei Schritten, dem \emph{Induktionsanfang} und dem \emph{Induktionsschritt}.
+	Der vollständige Induktionsbeweis besteht aus zwei Schritten, dem \emph{Induktionsanfang} und dem \emph{Induktionsschritt}.
 	Wenn man eine Aussage $A$ für alle natürlichen Zahlen beweisen möchte sehen die beiden Schritte folgendermaßen aus: \\
 	\begin{itemize}
 		\item \textbf{Induktionsanfang:} Man zeigt, dass die Aussage für den Startwert (meist $n = 1$) wahr ist.
 		\item \textbf{Induktionsschritt:} % Man zeigt, dass $A(n) \Rightarrow A(n+1)$ wahr ist. \\ \footnote{Vgl. \url{https://www2.math.uni-wuppertal.de/~fritzsch/lectures/vorkurs/vk_k3.pdf} (stand 3.9.25)} \\
 		\begin{itemize}
-			\item Man nimmt an, dass $A(n)$ wahr ist, die Aussage also für ein beliebiges $n$ zutrifft. Das ist die sogenannte \\ \emph{Induktionsvorraussetzung} oder \emph{Indutkionsannahme}.
-			\item Man leitet aus der Induktionsvorraussetzung her, dass $A(n + 1) $ dann auch wahr ist. Das nennt man \emph{Induktionsschluss}.
-			Die Aussage $A(n) \Rightarrow A(n + 1)$ muss also wahr sein. Dafür startet man bei $A(n)$  und erweiter diese Aussage um den $n + 1$-ten Term, und kommt dann durch Umformungen auf $A(n + 1)$.
+			\item Man nimmt an, dass $A(n)$ wahr ist, die Aussage also für ein beliebiges $n$ zutrifft. Das ist die sogenannte \\ \emph{Induktionsvoraussetzung} oder \emph{Indutkionsannahme}.
+			\item Man leitet aus der Induktionsvoraussetzung her, dass $A(n + 1) $ dann auch wahr ist. Das nennt man \emph{Induktionsschluss}.
+			Die Aussage $A(n) \Rightarrow A(n + 1)$ muss also wahr sein. Dafür startet man bei $A(n)$  und erweitert diese Aussage um den $n + 1$-ten Term, und kommt dann durch Umformungen auf $A(n + 1)$.
 			\footnote{Vgl. \url{https://www.logik.uni-jena.de/logikmedia/75/einfuehrung-in-das-mathematische-beweisen.pdf} (stand 2.9.25)}
 			\footnote{Vgl. \url{https://studyflix.de/mathematik/vollstandige-induktion-2406} (stand 15.9.25)}
 		\end{itemize}
@@ -131,7 +131,7 @@
 	\[
 	1 + 2 + \dots + n = \sum_{k=1}^{n} k = \frac{n(n+1)}{2}, \quad \forall n  \in \mathbb{N}, n \ge 1
 	\]
-	zur Berechnung der Summer der ersten n Zahlen aufgestellt. \footnote{Vgl. \url{https://studyflix.de/mathematik/gaussche-summenformel-2408}, (stand 3.9.25)} \\ 
+	zur Berechnung der Summe der ersten n Zahlen aufgestellt. \footnote{Vgl. \url{https://studyflix.de/mathematik/gaussche-summenformel-2408}, (stand 3.9.25)} \\ 
 	\\
 	Folgende Aussage soll nun bewiesen werden:
 	\[
@@ -224,7 +224,7 @@
 	Diese Aussage soll nun bewiesen werden.
 	
 	\subsubsection{Induktionsanfang (IA)}
-	Zuerst muss die Aussage für die erste Natürliche Zahl bewiesen werden.
+	Zuerst muss die Aussage für die erste natürliche Zahl bewiesen werden.
 	Wenn man in der Tabelle nachschaut, sollten sich bei $n=1$ $0$ Schnittpunkte ergeben.
 	$S(1)$ sollte also $0$ ergeben.
 	\[
@@ -237,13 +237,13 @@
 	\]
 	
 	\subsubsection{Induktionsschritt (IS)}
-	Bei jeder nächten Gerade, also der $n + 1$-ten kommen maximal $n$ Schnittpunkte dazu, da die $n + 1$-te Gerade maximal alle bisherigen einmal schneiden kann.
+	Bei jeder nächsten Gerade, also der $n + 1$-ten kommen maximal $n$ Schnittpunkte dazu, da die $n + 1$-te Gerade maximal alle bisherigen einmal schneiden kann.
 	Das wird auch bei folgendem Bild klar:
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\textwidth]{n+1_graphen_skizze.png}
 		\caption{Lambacher Schweizer Mathematik für Gymnasien, Kursstufe – Leistungsfach, 2016, S. 286, Abb. 3.}
-		\label{fig:Neue SChnittpunkte bei n-ter Gerade}
+		\label{fig:Neue Schnittpunkte bei n-ter Gerade}
 	\end{figure}
 	\newpage
 	Man nimmt also an, dass $S(n)$ wahr ist (Induktionsannahme) und zeigt, dass dann auch $S(n + 1)$ wahr ist.
@@ -263,13 +263,13 @@
 		\end{aligned}
 	\]
 	
-	\subsubsection{Kettneschluss}
+	\subsubsection{Kettenschluss}
 	Da die Aussage für die erste natürliche Zahl gilt(IA) und für alle Nachfolger(IS), gilt die Aussage für alle natürlichen Zahlen.
 	\footnote{Vgl. Lambacher Schweizer Mathematik für Gymnasien, Kursstufe – Leistungsfach, 2016, S. 286, Problem 1}
 
 	\section{Fazit}
 		Die vollständige Induktion ist ein Beweiseverfahren, dass sich eignet, um eine Aussage für alle natürliche Zahlen zu beweisen. 	
-		Es ist sehr effizient, da man in nur drei Schritten unendlich viele Fälle beweist. So müsste man bei den beiden Beispielen ohne die vollstände Induktion die Aussagen für alle natürliche Zahlen einzeln beweisen.
+		Es ist sehr effizient, da man in nur drei Schritten unendlich viele Fälle beweist. So müsste man bei den beiden Beispielen ohne die vollständige Induktion die Aussagen für alle natürlichen Zahlen einzeln beweisen.
 		\footnote{Vgl. \url{https://studyflix.de/mathematik/vollstandige-induktion-2406} (stand 18.11.25)}
 	\newpage
 	\section{Quellen}
